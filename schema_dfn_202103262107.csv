@@ -1,0 +1,6480 @@
+"schema_dfn_id","name","account_id","version","schema_dfn","last_modified_user","last_modified"
+1,rainbow,1,5,"[
+  {
+    ""table"": {
+      ""name"": ""categories"",
+      ""columns"": [
+        {
+          ""name"": ""id"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": true }
+        },
+        {
+          ""name"": ""name"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""displayNames"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""lang"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            },
+            {
+              ""name"": ""value"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""description"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""descriptions"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""lang"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            },
+            {
+              ""name"": ""value"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""position"",
+          ""dataType"": ""decimal2"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""onlineFlag"",
+          ""dataType"": ""boolean"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""parentCategoryId"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""pageTitle"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""pageTitles"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""lang"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            },
+            {
+              ""name"": ""value"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""pageDesc"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""pageDescs"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""lang"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            },
+            {
+              ""name"": ""value"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""pageKeyword"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""pageKeywords"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""lang"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            },
+            {
+              ""name"": ""value"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""customAttributes"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""attributeId"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""value"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""values"",
+              ""dataType"": ""string"",
+              ""isArray"": true,
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+
+        {
+          ""name"": ""showInMenu"",
+          ""dataType"": ""boolean"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""attributes"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""size"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            },
+            {
+              ""name"": ""color"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            },
+            {
+              ""name"": ""brand"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            },
+            {
+              ""name"": ""count"",
+              ""dataType"": ""int32"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""refinements"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""attributeBuckets"",
+              ""dataType"": ""struct"",
+              ""isArray"": true,
+              ""subStruct"": [
+                {
+                  ""name"": ""name"",
+                  ""dataType"": ""string"",
+                  ""isArray"": false,
+                  ""subStruct"": null,
+                  ""features"": { ""customerKey"": false }
+                },
+                {
+                  ""name"": ""valueList"",
+                  ""dataType"": ""string"",
+                  ""isArray"": false,
+                  ""subStruct"": null,
+                  ""features"": { ""customerKey"": false }
+                }
+              ],
+              ""features"": { ""customerKey"": false }
+            },
+            {
+              ""name"": ""attributeId"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            },
+            {
+              ""name"": ""bucketType"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""blockedRefinements"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""blockedType"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            },
+            {
+              ""name"": ""attributeId"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""viewalllink"",
+          ""dataType"": ""boolean"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""viewAllText"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""alternateCategoryID"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""sizeChartID"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        }
+      ],
+      ""indexes"": [
+        {
+          ""fields"": [
+            {
+              ""path"": ""categories.id"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": false
+              },
+              ""isPrimaryKey"": true
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""categories.parentCategoryId"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""categories.onlineFlag"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""categories.showInMenu"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    ""table"": {
+      ""name"": ""products"",
+      ""columns"": [
+        {
+          ""name"": ""prim_id"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": true },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""id"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""ean"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""unit"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""upc"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""minOrderQuantity"",
+          ""dataType"": ""decimal"",
+          ""scale"": 12,
+          ""precision"": 2,
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""stepQuantity"",
+          ""dataType"": ""decimal"",
+          ""scale"": 12,
+          ""precision"": 2,
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""name"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""shortDescription"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""shortDescriptions"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""lang"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            },
+            {
+              ""name"": ""value"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""longDescription"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""longDescriptions"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""lang"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            },
+            {
+              ""name"": ""value"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""onlineFlag"",
+          ""dataType"": ""boolean"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""availableFlag"",
+          ""dataType"": ""boolean"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""searchableFlag"",
+          ""dataType"": ""boolean"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""manufacturerSku"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""taxClassId"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""pageTitle"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""pageTitles"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""lang"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            },
+            {
+              ""name"": ""value"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""pageDesc"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""pageDescs"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""lang"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            },
+            {
+              ""name"": ""value"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""pageKeyword"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""pageKeywords"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""lang"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            },
+            {
+              ""name"": ""value"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""pageUrl"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""catalogId"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""classificationCategory"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+
+        {
+          ""name"": ""categories"",
+          ""dataType"": ""string"",
+          ""isArray"": true,
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null
+        },
+        {
+          ""name"": ""pricebooks"",
+          ""dataType"": ""JSON"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""isMaster"",
+          ""dataType"": ""boolean"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""masterId"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""price"",
+          ""dataType"": ""decimal"",
+          ""scale"": 12,
+          ""precision"": 2,
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""ats"",
+          ""dataType"": ""decimal"",
+          ""scale"": 12,
+          ""precision"": 2,
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""currency"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+
+        {
+          ""name"": ""customAttributes"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""attributeId"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""value"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""values"",
+              ""dataType"": ""string"",
+              ""isArray"": true,
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""attributes"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""attributeId"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""variationAttributeId"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""name"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""values"",
+              ""dataType"": ""struct"",
+              ""isArray"": true,
+              ""subStruct"": [
+                {
+                  ""name"": ""value"",
+                  ""dataType"": ""string"",
+                  ""features"": { ""customerKey"": false },
+                  ""subStruct"": null,
+                  ""isArray"": false
+                },
+                {
+                  ""name"": ""displayValue"",
+                  ""dataType"": ""string"",
+                  ""features"": { ""customerKey"": false },
+                  ""subStruct"": null,
+                  ""isArray"": false
+                },
+                {
+                  ""name"": ""lang"",
+                  ""dataType"": ""string"",
+                  ""features"": { ""customerKey"": false },
+                  ""subStruct"": null,
+                  ""isArray"": false
+                }
+              ],
+              ""features"": { ""customerKey"": false }
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""imageGroups"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""viewType"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""variationValue"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""images"",
+              ""dataType"": ""struct"",
+              ""isArray"": true,
+              ""subStruct"": [
+                {
+                  ""name"": ""path"",
+                  ""dataType"": ""string"",
+                  ""features"": { ""customerKey"": false },
+                  ""subStruct"": null,
+                  ""isArray"": false
+                },
+                {
+                  ""name"": ""alt"",
+                  ""dataType"": ""string"",
+                  ""features"": { ""customerKey"": false },
+                  ""subStruct"": null,
+                  ""isArray"": false
+                },
+                {
+                  ""name"": ""title"",
+                  ""dataType"": ""string"",
+                  ""features"": { ""customerKey"": false },
+                  ""subStruct"": null,
+                  ""isArray"": false
+                }
+              ],
+              ""features"": { ""customerKey"": false }
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""inventory"",
+          ""dataType"": ""struct"",
+          ""subStruct"": [
+            {
+              ""name"": ""allocation"",
+              ""dataType"": ""float64"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""allocationTimestamp"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""ats"",
+              ""dataType"": ""float64"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""perpetual"",
+              ""dataType"": ""bool"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""preorderBackorderHandling"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""onOrder"",
+              ""dataType"": ""int64"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""turnover"",
+              ""dataType"": ""int64"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            }
+          ],
+          ""features"": { ""customerKey"": false },
+          ""isArray"": false
+        },
+        {
+          ""name"": ""variants"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""id"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""price"",
+              ""dataType"": ""decimal"",
+              ""scale"": 12,
+              ""precision"": 2,
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""ats"",
+              ""dataType"": ""decimal"",
+              ""scale"": 12,
+              ""precision"": 2,
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+
+            {
+              ""name"": ""size"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""color"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""mainColor"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""slicingId"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""slicingValue"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""size"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""color"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""mainColor"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""priceafterdiscount"",
+          ""dataType"": ""decimal"",
+          ""scale"": 12,
+          ""precision"": 2,
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""brand"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""sizes"",
+          ""dataType"": ""string"",
+          ""isArray"": true,
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null
+        },
+        {
+          ""name"": ""colors"",
+          ""dataType"": ""string"",
+          ""isArray"": true,
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null
+        },
+        {
+          ""name"": ""promotext"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null
+        },
+        {
+          ""name"": ""sellableProductDate"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null
+        },
+        {
+          ""name"": ""sortrvw"",
+          ""dataType"": ""uint64"",
+          ""isArray"": false,
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null
+        },
+        {
+          ""name"": ""sortow"",
+          ""dataType"": ""uint64"",
+          ""isArray"": false,
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null
+        },
+        {
+          ""name"": ""sortrvm"",
+          ""dataType"": ""uint64"",
+          ""isArray"": false,
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null
+        },
+        {
+          ""name"": ""sortom"",
+          ""dataType"": ""uint64"",
+          ""isArray"": false,
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null
+        }
+      ],
+      ""indexes"": [
+        {
+          ""fields"": [
+            {
+              ""path"": ""products.prim_id"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": false,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": true
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products.id"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products.name"",
+              ""features"": {
+                ""tokenize"": true,
+                ""ascending"": false,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products.masterId"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products.isMaster"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": false,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products.onlineFlag"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": false,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products.categories"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products.price"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": false,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products.size"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products.color"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products.mainColor"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products.brand"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products.priceafterdiscount"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products.sizes"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products.colors"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products.sellableProductDate"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products.promotext"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products.ats"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    ""table"": {
+      ""name"": ""redirects"",
+      ""columns"": [
+        {
+          ""name"": ""id"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": true },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""redirectType"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""value"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""keywords"",
+          ""dataType"": ""string"",
+          ""isArray"": true,
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null
+        }
+      ],
+      ""indexes"": [
+        {
+          ""fields"": [
+            {
+              ""path"": ""redirects.id"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": true
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""redirects.keywords"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    ""table"": {
+      ""name"": ""category_attributes"",
+      ""columns"": [
+        {
+          ""name"": ""category_id"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": true },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""size"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""color"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""brand"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""cnt"",
+          ""dataType"": ""uint32"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        }
+      ],
+      ""indexes"": [
+        {
+          ""fields"": [
+            {
+              ""path"": ""category_attributes.category_id"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": true
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""category_attributes.category_id"",
+              ""features"": {
+                ""tokenize"": true,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    ""table"": {
+      ""name"": ""extensions"",
+      ""columns"": [
+        {
+          ""name"": ""typeId"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": true },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""attributes"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""attributeId"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""displayName"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""description"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""minVal"",
+              ""dataType"": ""decimal"",
+              ""scale"": 12,
+              ""precision"": 2,
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""maxVal"",
+              ""dataType"": ""decimal"",
+              ""scale"": 12,
+              ""precision"": 2,
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""attributeType"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""values"",
+              ""dataType"": ""struct"",
+              ""isArray"": true,
+              ""subStruct"": [
+                {
+                  ""name"": ""display"",
+                  ""dataType"": ""string"",
+                  ""features"": { ""customerKey"": false },
+                  ""subStruct"": null,
+                  ""isArray"": false
+                },
+                {
+                  ""name"": ""value"",
+                  ""dataType"": ""string"",
+                  ""features"": { ""customerKey"": false },
+                  ""subStruct"": null,
+                  ""isArray"": false
+                }
+              ],
+              ""features"": { ""customerKey"": false }
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""groups"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""groupId"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""displayName"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""attributes"",
+              ""dataType"": ""string"",
+              ""isArray"": true,
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        }
+      ],
+      ""indexes"": [
+        {
+          ""fields"": [
+            {
+              ""path"": ""extensions.typeId"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": true
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    ""table"": {
+      ""name"": ""stores"",
+      ""columns"": [
+        {
+          ""name"": ""id"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": true }
+        },
+        {
+          ""name"": ""name"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""address1"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""address2"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""city"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""postalCode"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""stateCode"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""countryCode"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""phone"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""fax"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""email"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""storeHours"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""lang"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            },
+            {
+              ""name"": ""value"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""storeEvents"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""lang"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            },
+            {
+              ""name"": ""value"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""customAttributes"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""attributeId"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            },
+            {
+              ""name"": ""value"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null
+            },
+            {
+              ""name"": ""values"",
+              ""dataType"": ""string"",
+              ""isArray"": true,
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        }
+      ],
+      ""indexes"": [
+        {
+          ""fields"": [
+            {
+              ""path"": ""stores.id"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": true
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""stores.postalCode"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    ""table"": {
+      ""name"": ""contents"",
+      ""columns"": [
+        {
+          ""name"": ""id"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": true }
+        },
+        {
+          ""name"": ""name"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""localeName"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""lang"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            },
+            {
+              ""name"": ""value"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""description"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""localeDesc"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""lang"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            },
+            {
+              ""name"": ""value"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""pageTitle"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""localePageTitle"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""lang"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            },
+            {
+              ""name"": ""value"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""pageDesc"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""localePageDesc"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""lang"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            },
+            {
+              ""name"": ""value"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""pageUrl"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""localePageUrl"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""lang"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            },
+            {
+              ""name"": ""value"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""customAttributes"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""attributeId"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""value"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""values"",
+              ""dataType"": ""string"",
+              ""isArray"": true,
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        }
+      ],
+      ""indexes"": [
+        {
+          ""fields"": [
+            {
+              ""path"": ""contents.id"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": true
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    ""table"": {
+      ""name"": ""slots"",
+      ""columns"": [
+        {
+          ""name"": ""id"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""slot_id"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": true }
+        },
+        {
+          ""name"": ""context"",
+          ""dataType"": ""string"",
+          ""isArray"": true,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""context_id"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""configuration_id"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""default_flag"",
+          ""dataType"": ""boolean"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""content"",
+          ""dataType"": ""string"",
+          ""isArray"": true,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""customAttributes"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""attributeId"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""value"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""values"",
+              ""dataType"": ""string"",
+              ""isArray"": true,
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        }
+      ],
+      ""indexes"": [
+        {
+          ""fields"": [
+            {
+              ""path"": ""slots.id"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": true
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""slots.slot_id"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""slots.context"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""slots.context_id"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""slots.configuration_id"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""slots.default_flag"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    ""table"": {
+      ""name"": ""products_by_color"",
+      ""columns"": [
+        {
+          ""name"": ""prim_id"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": true },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""id"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""ean"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""unit"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""upc"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""minOrderQuantity"",
+          ""dataType"": ""decimal2"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""stepQuantity"",
+          ""dataType"": ""decimal2"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""name"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""shortDescription"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""shortDescriptions"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""lang"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            },
+            {
+              ""name"": ""value"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""longDescription"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""longDescriptions"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""lang"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            },
+            {
+              ""name"": ""value"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""onlineFlag"",
+          ""dataType"": ""boolean"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""availableFlag"",
+          ""dataType"": ""boolean"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""searchableFlag"",
+          ""dataType"": ""boolean"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""manufacturerSku"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""taxClassId"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""pageTitle"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""pageTitles"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""lang"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            },
+            {
+              ""name"": ""value"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""pageDesc"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""pageDescs"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""lang"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            },
+            {
+              ""name"": ""value"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""pageKeyword"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""pageKeywords"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""lang"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            },
+            {
+              ""name"": ""value"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""pageUrl"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""catalogId"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""classificationCategory"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+
+        {
+          ""name"": ""categories"",
+          ""dataType"": ""string"",
+          ""isArray"": true,
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null
+        },
+        {
+          ""name"": ""pricebooks"",
+          ""dataType"": ""JSON"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""isMaster"",
+          ""dataType"": ""boolean"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""masterId"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""price"",
+          ""dataType"": ""decimal2"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""ats"",
+          ""dataType"": ""decimal2"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""currency"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+
+        {
+          ""name"": ""customAttributes"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""attributeId"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""value"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""values"",
+              ""dataType"": ""string"",
+              ""isArray"": true,
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""attributes"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""attributeId"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""variationAttributeId"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""name"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""values"",
+              ""dataType"": ""struct"",
+              ""isArray"": true,
+              ""subStruct"": [
+                {
+                  ""name"": ""value"",
+                  ""dataType"": ""string"",
+                  ""features"": { ""customerKey"": false },
+                  ""subStruct"": null,
+                  ""isArray"": false
+                },
+                {
+                  ""name"": ""displayValue"",
+                  ""dataType"": ""string"",
+                  ""features"": { ""customerKey"": false },
+                  ""subStruct"": null,
+                  ""isArray"": false
+                },
+                {
+                  ""name"": ""lang"",
+                  ""dataType"": ""string"",
+                  ""features"": { ""customerKey"": false },
+                  ""subStruct"": null,
+                  ""isArray"": false
+                }
+              ],
+              ""features"": { ""customerKey"": false }
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""imageGroups"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""viewType"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""variationValue"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""images"",
+              ""dataType"": ""struct"",
+              ""isArray"": true,
+              ""subStruct"": [
+                {
+                  ""name"": ""path"",
+                  ""dataType"": ""string"",
+                  ""features"": { ""customerKey"": false },
+                  ""subStruct"": null,
+                  ""isArray"": false
+                },
+                {
+                  ""name"": ""alt"",
+                  ""dataType"": ""string"",
+                  ""features"": { ""customerKey"": false },
+                  ""subStruct"": null,
+                  ""isArray"": false
+                },
+                {
+                  ""name"": ""title"",
+                  ""dataType"": ""string"",
+                  ""features"": { ""customerKey"": false },
+                  ""subStruct"": null,
+                  ""isArray"": false
+                }
+              ],
+              ""features"": { ""customerKey"": false }
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""inventory"",
+          ""dataType"": ""struct"",
+          ""subStruct"": [
+            {
+              ""name"": ""allocation"",
+              ""dataType"": ""float64"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""allocationTimestamp"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""ats"",
+              ""dataType"": ""float64"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""perpetual"",
+              ""dataType"": ""bool"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""preorderBackorderHandling"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""onOrder"",
+              ""dataType"": ""int64"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""turnover"",
+              ""dataType"": ""int64"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            }
+          ],
+          ""features"": { ""customerKey"": false },
+          ""isArray"": false
+        },
+        {
+          ""name"": ""variants"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""id"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""price"",
+              ""dataType"": ""decimal2"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""ats"",
+              ""dataType"": ""decimal2"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+
+            {
+              ""name"": ""size"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""color"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""mainColor"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""slicingId"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""slicingValue"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""size"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""color"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""mainColor"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""priceafterdiscount"",
+          ""dataType"": ""decimal2"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""brand"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""sizes"",
+          ""dataType"": ""string"",
+          ""isArray"": true,
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null
+        },
+        {
+          ""name"": ""colors"",
+          ""dataType"": ""string"",
+          ""isArray"": true,
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null
+        },
+        {
+          ""name"": ""promotext"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null
+        },
+        {
+          ""name"": ""sellableProductDate"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null
+        },
+        {
+          ""name"": ""sortrvw"",
+          ""dataType"": ""uint64"",
+          ""isArray"": false,
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null
+        },
+        {
+          ""name"": ""sortow"",
+          ""dataType"": ""uint64"",
+          ""isArray"": false,
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null
+        },
+        {
+          ""name"": ""sortrvm"",
+          ""dataType"": ""uint64"",
+          ""isArray"": false,
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null
+        },
+        {
+          ""name"": ""sortom"",
+          ""dataType"": ""uint64"",
+          ""isArray"": false,
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null
+        }
+      ],
+      ""indexes"": [
+        {
+          ""fields"": [
+            {
+              ""path"": ""products_by_color.prim_id"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": false,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": true
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products_by_color.id"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products_by_color.name"",
+              ""features"": {
+                ""tokenize"": true,
+                ""ascending"": false,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products_by_color.masterId"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products_by_color.isMaster"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": false,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products_by_color.onlineFlag"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": false,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products_by_color.categories"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products_by_color.price"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": false,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products_by_color.size"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products_by_color.color"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products_by_color.mainColor"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products_by_color.brand"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products_by_color.priceafterdiscount"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products_by_color.sizes"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products_by_color.colors"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products_by_color.sellableProductDate"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products_by_color.promotext"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products_by_color.ats"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    ""table"": {
+      ""name"": ""products_by_size"",
+      ""columns"": [
+        {
+          ""name"": ""prim_id"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": true },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""id"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""ean"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""unit"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""upc"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""minOrderQuantity"",
+          ""dataType"": ""decimal2"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""stepQuantity"",
+          ""dataType"": ""decimal2"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""name"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""shortDescription"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""shortDescriptions"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""lang"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            },
+            {
+              ""name"": ""value"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""longDescription"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""longDescriptions"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""lang"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            },
+            {
+              ""name"": ""value"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""onlineFlag"",
+          ""dataType"": ""boolean"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""availableFlag"",
+          ""dataType"": ""boolean"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""searchableFlag"",
+          ""dataType"": ""boolean"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""manufacturerSku"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""taxClassId"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""pageTitle"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""pageTitles"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""lang"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            },
+            {
+              ""name"": ""value"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""pageDesc"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""pageDescs"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""lang"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            },
+            {
+              ""name"": ""value"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""pageKeyword"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""subStruct"": null,
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""pageKeywords"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""lang"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            },
+            {
+              ""name"": ""value"",
+              ""dataType"": ""string"",
+              ""isArray"": false,
+              ""subStruct"": null,
+              ""features"": { ""customerKey"": false }
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""pageUrl"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""catalogId"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""classificationCategory"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+
+        {
+          ""name"": ""categories"",
+          ""dataType"": ""string"",
+          ""isArray"": true,
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null
+        },
+        {
+          ""name"": ""pricebooks"",
+          ""dataType"": ""JSON"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""isMaster"",
+          ""dataType"": ""boolean"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""masterId"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""price"",
+          ""dataType"": ""decimal2"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""ats"",
+          ""dataType"": ""decimal2"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""currency"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+
+        {
+          ""name"": ""customAttributes"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""attributeId"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""value"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""values"",
+              ""dataType"": ""string"",
+              ""isArray"": true,
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""attributes"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""attributeId"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""variationAttributeId"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""name"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""values"",
+              ""dataType"": ""struct"",
+              ""isArray"": true,
+              ""subStruct"": [
+                {
+                  ""name"": ""value"",
+                  ""dataType"": ""string"",
+                  ""features"": { ""customerKey"": false },
+                  ""subStruct"": null,
+                  ""isArray"": false
+                },
+                {
+                  ""name"": ""displayValue"",
+                  ""dataType"": ""string"",
+                  ""features"": { ""customerKey"": false },
+                  ""subStruct"": null,
+                  ""isArray"": false
+                },
+                {
+                  ""name"": ""lang"",
+                  ""dataType"": ""string"",
+                  ""features"": { ""customerKey"": false },
+                  ""subStruct"": null,
+                  ""isArray"": false
+                }
+              ],
+              ""features"": { ""customerKey"": false }
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""imageGroups"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""viewType"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""variationValue"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""images"",
+              ""dataType"": ""struct"",
+              ""isArray"": true,
+              ""subStruct"": [
+                {
+                  ""name"": ""path"",
+                  ""dataType"": ""string"",
+                  ""features"": { ""customerKey"": false },
+                  ""subStruct"": null,
+                  ""isArray"": false
+                },
+                {
+                  ""name"": ""alt"",
+                  ""dataType"": ""string"",
+                  ""features"": { ""customerKey"": false },
+                  ""subStruct"": null,
+                  ""isArray"": false
+                },
+                {
+                  ""name"": ""title"",
+                  ""dataType"": ""string"",
+                  ""features"": { ""customerKey"": false },
+                  ""subStruct"": null,
+                  ""isArray"": false
+                }
+              ],
+              ""features"": { ""customerKey"": false }
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""inventory"",
+          ""dataType"": ""struct"",
+          ""subStruct"": [
+            {
+              ""name"": ""allocation"",
+              ""dataType"": ""float64"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""allocationTimestamp"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""ats"",
+              ""dataType"": ""float64"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""perpetual"",
+              ""dataType"": ""bool"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""preorderBackorderHandling"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""onOrder"",
+              ""dataType"": ""int64"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""turnover"",
+              ""dataType"": ""int64"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            }
+          ],
+          ""features"": { ""customerKey"": false },
+          ""isArray"": false
+        },
+        {
+          ""name"": ""variants"",
+          ""dataType"": ""struct"",
+          ""isArray"": true,
+          ""subStruct"": [
+            {
+              ""name"": ""id"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""price"",
+              ""dataType"": ""decimal2"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""ats"",
+              ""dataType"": ""decimal2"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+
+            {
+              ""name"": ""size"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""color"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            },
+            {
+              ""name"": ""mainColor"",
+              ""dataType"": ""string"",
+              ""features"": { ""customerKey"": false },
+              ""subStruct"": null,
+              ""isArray"": false
+            }
+          ],
+          ""features"": { ""customerKey"": false }
+        },
+        {
+          ""name"": ""slicingId"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""slicingValue"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""size"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""color"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""mainColor"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""priceafterdiscount"",
+          ""dataType"": ""decimal2"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""brand"",
+          ""dataType"": ""string"",
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null,
+          ""isArray"": false
+        },
+        {
+          ""name"": ""sizes"",
+          ""dataType"": ""string"",
+          ""isArray"": true,
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null
+        },
+        {
+          ""name"": ""colors"",
+          ""dataType"": ""string"",
+          ""isArray"": true,
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null
+        },
+        {
+          ""name"": ""promotext"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null
+        },
+        {
+          ""name"": ""sellableProductDate"",
+          ""dataType"": ""string"",
+          ""isArray"": false,
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null
+        },
+        {
+          ""name"": ""sortrvw"",
+          ""dataType"": ""uint64"",
+          ""isArray"": false,
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null
+        },
+        {
+          ""name"": ""sortow"",
+          ""dataType"": ""uint64"",
+          ""isArray"": false,
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null
+        },
+        {
+          ""name"": ""sortrvm"",
+          ""dataType"": ""uint64"",
+          ""isArray"": false,
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null
+        },
+        {
+          ""name"": ""sortom"",
+          ""dataType"": ""uint64"",
+          ""isArray"": false,
+          ""features"": { ""customerKey"": false },
+          ""subStruct"": null
+        }
+      ],
+      ""indexes"": [
+        {
+          ""fields"": [
+            {
+              ""path"": ""products_by_size.prim_id"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": false,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": true
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products_by_size.id"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products_by_size.name"",
+              ""features"": {
+                ""tokenize"": true,
+                ""ascending"": false,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products_by_size.masterId"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products_by_size.isMaster"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": false,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products_by_size.onlineFlag"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": false,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products_by_size.categories"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products_by_size.price"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": false,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products_by_size.size"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products_by_size.color"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products_by_size.mainColor"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products_by_size.brand"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products_by_size.priceafterdiscount"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products_by_size.sizes"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products_by_size.colors"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products_by_size.sellableProductDate"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products_by_size.promotext"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""products_by_size.ats"",
+              ""features"": {
+                ""tokenize"": false,
+                ""ascending"": true,
+                ""fuzzy"": false
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": true
+          }
+        }
+      ]
+    }
+  }
+]
+",0,2021-02-12 14:09:50
+3,demo-structInStruct,1,1,"[
+  {
+    ""table"": {
+      ""name"": ""myTable"",
+      ""columns"": [
+        {
+          ""name"": ""id"",
+          ""dataType"": ""string"",
+          ""subStruct"": null,
+          ""isArray"": false,
+          ""features"": {
+            ""customerKey"": true
+          }
+        },
+        {
+          ""name"": ""ooeParent"",
+          ""dataType"": ""struct"",
+          ""subStruct"": [
+            {
+              ""name"": ""u32"",
+              ""dataType"": ""uint32"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""u64"",
+              ""dataType"": ""uint64"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""i32"",
+              ""dataType"": ""int32"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""i64"",
+              ""dataType"": ""int64"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""f64"",
+              ""dataType"": ""float64"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""d2"",
+              ""dataType"": ""decimal"",
+              ""precision"": 12,
+              ""scale"": 2,
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""d5"",
+              ""dataType"": ""decimal"",
+              ""precision"": 12,
+              ""scale"": 5,
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""d6"",
+              ""dataType"": ""decimal"",
+              ""precision"": 12,
+              ""scale"": 6,
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""b"",
+              ""dataType"": ""boolean"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""iljson"",
+              ""dataType"": ""JSON"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""string"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""au64"",
+              ""dataType"": ""uint64"",
+              ""subStruct"": null,
+              ""isArray"": true,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""ooeChild"",
+              ""dataType"": ""struct"",
+              ""subStruct"": [
+                {
+                  ""name"": ""u32"",
+                  ""dataType"": ""uint32"",
+                  ""subStruct"": null,
+                  ""isArray"": false,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                },
+                {
+                  ""name"": ""u64"",
+                  ""dataType"": ""uint64"",
+                  ""subStruct"": null,
+                  ""isArray"": false,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                },
+                {
+                  ""name"": ""i32"",
+                  ""dataType"": ""int32"",
+                  ""subStruct"": null,
+                  ""isArray"": false,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                },
+                {
+                  ""name"": ""i64"",
+                  ""dataType"": ""int64"",
+                  ""subStruct"": null,
+                  ""isArray"": false,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                },
+                {
+                  ""name"": ""f64"",
+                  ""dataType"": ""float64"",
+                  ""subStruct"": null,
+                  ""isArray"": false,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                },
+                {
+                  ""name"": ""d2"",
+                  ""dataType"": ""decimal"",
+                  ""precision"": 12,
+                  ""scale"": 2,
+                  ""subStruct"": null,
+                  ""isArray"": false,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                },
+                {
+                  ""name"": ""d5"",
+                  ""dataType"": ""decimal"",
+                  ""precision"": 12,
+                  ""scale"": 5,
+                  ""subStruct"": null,
+                  ""isArray"": false,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                },
+                {
+                  ""name"": ""d6"",
+                  ""dataType"": ""decimal"",
+                  ""precision"": 12,
+                  ""scale"": 6,
+                  ""subStruct"": null,
+                  ""isArray"": false,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                },
+                {
+                  ""name"": ""b"",
+                  ""dataType"": ""boolean"",
+                  ""subStruct"": null,
+                  ""isArray"": false,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                },
+                {
+                  ""name"": ""iljson"",
+                  ""dataType"": ""JSON"",
+                  ""subStruct"": null,
+                  ""isArray"": false,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                },
+                {
+                  ""name"": ""string"",
+                  ""dataType"": ""string"",
+                  ""subStruct"": null,
+                  ""isArray"": false,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                },
+                {
+                  ""name"": ""au64"",
+                  ""dataType"": ""uint64"",
+                  ""subStruct"": null,
+                  ""isArray"": true,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                }
+              ],
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            }
+          ],
+          ""isArray"": false,
+          ""features"": {
+            ""customerKey"": false
+          }
+        }
+      ],
+      ""indexes"": [
+        {
+          ""fields"": [
+            {
+              ""path"": ""ooe-u32"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": false
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""ooe-d2"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": false
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""ooe-b"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": false
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""ooe-d6"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": false
+          }
+        }
+      ]
+    }
+  }
+]
+",0,2021-02-24 13:38:04
+2,demo,1,1,"[
+  {
+    ""table"": {
+      ""name"": ""myTable"",
+      ""columns"": [
+        {
+          ""name"": ""id"",
+          ""dataType"": ""string"",
+          ""subStruct"": null,
+          ""isArray"": false,
+          ""features"": {
+            ""customerKey"": true
+          }
+        },
+        {
+          ""name"": ""categories"",
+          ""dataType"": ""struct"",
+          ""subStruct"": [
+            {
+              ""name"": ""akey"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""val"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            }
+          ],
+          ""isArray"": true,
+          ""features"": {
+            ""customerKey"": false
+          }
+        },
+        {
+          ""name"": ""ooe"",
+          ""dataType"": ""struct"",
+          ""subStruct"": [
+            {
+              ""name"": ""u32"",
+              ""dataType"": ""uint32"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""u64"",
+              ""dataType"": ""uint64"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""i32"",
+              ""dataType"": ""int32"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""i64"",
+              ""dataType"": ""int64"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""f64"",
+              ""dataType"": ""float64"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""d2"",
+              ""dataType"": ""decimal"",
+              ""precision"": 12,
+              ""scale"": 2,
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""d5"",
+              ""dataType"": ""decimal"",
+              ""precision"": 12,
+              ""scale"": 5,
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""d6"",
+              ""dataType"": ""decimal"",
+              ""precision"": 12,
+              ""scale"": 6,
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""b"",
+              ""dataType"": ""boolean"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""iljson"",
+              ""dataType"": ""JSON"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""string"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""datetime"",
+              ""dataType"": ""timestamp"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""au64"",
+              ""dataType"": ""uint64"",
+              ""subStruct"": null,
+              ""isArray"": true,
+              ""features"": {
+                ""customerKey"": false
+              }
+            }
+          ],
+          ""isArray"": false,
+          ""features"": {
+            ""customerKey"": false
+          }
+        },
+        {
+          ""name"": ""manyStrings"",
+          ""dataType"": ""struct"",
+          ""subStruct"": [
+            {
+              ""name"": ""mstring00"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""mstring01"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""mstring02"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""mstring03"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""mstring04"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""mstring05"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""mstring06"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""mstring07"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""mstring08"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""mstring09"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""mstring10"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""mstring11"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""mstring12"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""mstring13"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""mstring14"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""mstring15"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""mstring16"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""mstring17"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""mstring18"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""mstring19"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""mstring20"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""mstring21"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""mstring22"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""mstring23"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""mstring24"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""mstring25"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""mstring26"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""mstring27"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""mstring28"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""mstring29"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            }
+          ],
+          ""isArray"": false,
+          ""features"": {
+            ""customerKey"": false
+          }
+        }
+      ],
+      ""indexes"": [
+        {
+          ""fields"": [
+            {
+              ""path"": ""categories-akey"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": true
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": false
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""ooe-u32"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": false
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""ooe-d2"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": false
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""ooe-b"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": false
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""ooe-d6"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": false
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""manyStrings-mstring00"",
+              ""features"": {
+                ""fuzzy"": true,
+                ""tokenize"": true,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": false
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""manyStrings-mstring03"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    ""table"": {
+      ""name"": ""myTable_array_in_struct"",
+      ""columns"": [
+        {
+          ""name"": ""id"",
+          ""dataType"": ""string"",
+          ""subStruct"": null,
+          ""isArray"": false,
+          ""features"": {
+            ""customerKey"": true
+          }
+        },
+        {
+          ""name"": ""parent_ooe"",
+          ""dataType"": ""struct"",
+          ""subStruct"": [
+            {
+              ""name"": ""u32"",
+              ""dataType"": ""uint32"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""u64"",
+              ""dataType"": ""uint64"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""i32"",
+              ""dataType"": ""int32"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""i64"",
+              ""dataType"": ""int64"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""f64"",
+              ""dataType"": ""float64"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""d2"",
+              ""dataType"": ""decimal"",
+              ""precision"": 12,
+              ""scale"": 2,
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""d5"",
+              ""dataType"": ""decimal"",
+              ""precision"": 12,
+              ""scale"": 5,
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""d6"",
+              ""dataType"": ""decimal"",
+              ""precision"": 12,
+              ""scale"": 6,
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""b"",
+              ""dataType"": ""boolean"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""iljson"",
+              ""dataType"": ""JSON"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""string"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""datetime"",
+              ""dataType"": ""timestamp"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""child_au64"",
+              ""dataType"": ""uint64"",
+              ""subStruct"": null,
+              ""isArray"": true,
+              ""features"": {
+                ""customerKey"": false
+              }
+            }
+          ],
+          ""isArray"": false,
+          ""features"": {
+            ""customerKey"": false
+          }
+        }
+      ],
+      ""indexes"": [
+        {
+          ""fields"": [
+            {
+              ""path"": ""ooe-u32"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": false
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""ooe-d2"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": false
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""ooe-b"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": false
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""ooe-d6"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    ""table"": {
+      ""name"": ""myTable_struct_in_struct"",
+      ""columns"": [
+        {
+          ""name"": ""id"",
+          ""dataType"": ""string"",
+          ""subStruct"": null,
+          ""isArray"": false,
+          ""features"": {
+            ""customerKey"": true
+          }
+        },
+        {
+          ""name"": ""parent_ooe"",
+          ""dataType"": ""struct"",
+          ""subStruct"": [
+            {
+              ""name"": ""u32"",
+              ""dataType"": ""uint32"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""u64"",
+              ""dataType"": ""uint64"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""i32"",
+              ""dataType"": ""int32"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""i64"",
+              ""dataType"": ""int64"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""f64"",
+              ""dataType"": ""float64"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""d2"",
+              ""dataType"": ""decimal"",
+              ""precision"": 12,
+              ""scale"": 2,
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""d5"",
+              ""dataType"": ""decimal"",
+              ""precision"": 12,
+              ""scale"": 5,
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""d6"",
+              ""dataType"": ""decimal"",
+              ""precision"": 12,
+              ""scale"": 6,
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""b"",
+              ""dataType"": ""boolean"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""iljson"",
+              ""dataType"": ""JSON"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""string"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""datetime"",
+              ""dataType"": ""timestamp"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""child_ooe"",
+              ""dataType"": ""struct"",
+              ""subStruct"": [
+                {
+                  ""name"": ""u32"",
+                  ""dataType"": ""uint32"",
+                  ""subStruct"": null,
+                  ""isArray"": false,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                },
+                {
+                  ""name"": ""u64"",
+                  ""dataType"": ""uint64"",
+                  ""subStruct"": null,
+                  ""isArray"": false,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                },
+                {
+                  ""name"": ""i32"",
+                  ""dataType"": ""int32"",
+                  ""subStruct"": null,
+                  ""isArray"": false,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                },
+                {
+                  ""name"": ""i64"",
+                  ""dataType"": ""int64"",
+                  ""subStruct"": null,
+                  ""isArray"": false,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                },
+                {
+                  ""name"": ""f64"",
+                  ""dataType"": ""float64"",
+                  ""subStruct"": null,
+                  ""isArray"": false,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                },
+                {
+                  ""name"": ""d2"",
+                  ""dataType"": ""decimal"",
+                  ""precision"": 12,
+                  ""scale"": 2,
+                  ""subStruct"": null,
+                  ""isArray"": false,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                },
+                {
+                  ""name"": ""d5"",
+                  ""dataType"": ""decimal"",
+                  ""precision"": 12,
+                  ""scale"": 5,
+                  ""subStruct"": null,
+                  ""isArray"": false,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                },
+                {
+                  ""name"": ""d6"",
+                  ""dataType"": ""decimal"",
+                  ""precision"": 12,
+                  ""scale"": 6,
+                  ""subStruct"": null,
+                  ""isArray"": false,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                },
+                {
+                  ""name"": ""b"",
+                  ""dataType"": ""boolean"",
+                  ""subStruct"": null,
+                  ""isArray"": false,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                },
+                {
+                  ""name"": ""iljson"",
+                  ""dataType"": ""JSON"",
+                  ""subStruct"": null,
+                  ""isArray"": false,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                },
+                {
+                  ""name"": ""string"",
+                  ""dataType"": ""string"",
+                  ""subStruct"": null,
+                  ""isArray"": false,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                },
+                {
+                  ""name"": ""datetime"",
+                  ""dataType"": ""timestamp"",
+                  ""subStruct"": null,
+                  ""isArray"": false,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                }
+              ],
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            }
+          ],
+          ""isArray"": false,
+          ""features"": {
+            ""customerKey"": false
+          }
+        }
+      ],
+      ""indexes"": [
+        {
+          ""fields"": [
+            {
+              ""path"": ""ooe-u32"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": false
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""ooe-d2"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": false
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""ooe-b"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": false
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""ooe-d6"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    ""table"": {
+      ""name"": ""myTable_arrayStruct_in_struct"",
+      ""columns"": [
+        {
+          ""name"": ""id"",
+          ""dataType"": ""string"",
+          ""subStruct"": null,
+          ""isArray"": false,
+          ""features"": {
+            ""customerKey"": true
+          }
+        },
+        {
+          ""name"": ""parent_ooe"",
+          ""dataType"": ""struct"",
+          ""subStruct"": [
+            {
+              ""name"": ""u32"",
+              ""dataType"": ""uint32"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""u64"",
+              ""dataType"": ""uint64"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""i32"",
+              ""dataType"": ""int32"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""i64"",
+              ""dataType"": ""int64"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""f64"",
+              ""dataType"": ""float64"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""d2"",
+              ""dataType"": ""decimal"",
+              ""precision"": 12,
+              ""scale"": 2,
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""d5"",
+              ""dataType"": ""decimal"",
+              ""precision"": 12,
+              ""scale"": 5,
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""d6"",
+              ""dataType"": ""decimal"",
+              ""precision"": 12,
+              ""scale"": 6,
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""b"",
+              ""dataType"": ""boolean"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""iljson"",
+              ""dataType"": ""JSON"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""string"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""datetime"",
+              ""dataType"": ""timestamp"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""child_categories"",
+              ""dataType"": ""struct"",
+              ""subStruct"": [
+                {
+                  ""name"": ""akey"",
+                  ""dataType"": ""string"",
+                  ""subStruct"": null,
+                  ""isArray"": false,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                },
+                {
+                  ""name"": ""val"",
+                  ""dataType"": ""string"",
+                  ""subStruct"": null,
+                  ""isArray"": false,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                }
+              ],
+              ""isArray"": true,
+              ""features"": {
+                ""customerKey"": false
+              }
+            }
+          ],
+          ""isArray"": false,
+          ""features"": {
+            ""customerKey"": false
+          }
+        }
+      ],
+      ""indexes"": [
+        {
+          ""fields"": [
+            {
+              ""path"": ""ooe-u32"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": false
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""ooe-d2"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": false
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""ooe-b"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": false
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""ooe-d6"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    ""table"": {
+      ""name"": ""myTable_field_in_struct"",
+      ""columns"": [
+        {
+          ""name"": ""id"",
+          ""dataType"": ""string"",
+          ""subStruct"": null,
+          ""isArray"": false,
+          ""features"": {
+            ""customerKey"": true
+          }
+        },
+        {
+          ""name"": ""parent_ooe"",
+          ""dataType"": ""struct"",
+          ""subStruct"": [
+            {
+              ""name"": ""u32"",
+              ""dataType"": ""uint32"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""u64"",
+              ""dataType"": ""uint64"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""i32"",
+              ""dataType"": ""int32"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""i64"",
+              ""dataType"": ""int64"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""f64"",
+              ""dataType"": ""float64"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""d2"",
+              ""dataType"": ""decimal"",
+              ""precision"": 12,
+              ""scale"": 2,
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""d5"",
+              ""dataType"": ""decimal"",
+              ""precision"": 12,
+              ""scale"": 5,
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""d6"",
+              ""dataType"": ""decimal"",
+              ""precision"": 12,
+              ""scale"": 6,
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""b"",
+              ""dataType"": ""boolean"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""iljson"",
+              ""dataType"": ""JSON"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""string"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""datetime"",
+              ""dataType"": ""timestamp"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""child_id"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            }
+          ],
+          ""isArray"": false,
+          ""features"": {
+            ""customerKey"": false
+          }
+        }
+      ],
+      ""indexes"": [
+        {
+          ""fields"": [
+            {
+              ""path"": ""ooe-u32"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": false
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""ooe-d2"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": false
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""ooe-b"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": false
+          }
+        },
+        {
+          ""fields"": [
+            {
+              ""path"": ""ooe-d6"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": false
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    ""table"": {
+      ""name"": ""myTable_array_in_arrayStruct"",
+      ""columns"": [
+        {
+          ""name"": ""id"",
+          ""dataType"": ""string"",
+          ""subStruct"": null,
+          ""isArray"": false,
+          ""features"": {
+            ""customerKey"": true
+          }
+        },
+        {
+          ""name"": ""parent_categories"",
+          ""dataType"": ""struct"",
+          ""subStruct"": [
+            {
+              ""name"": ""akey"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""val"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""child_au64"",
+              ""dataType"": ""uint64"",
+              ""subStruct"": null,
+              ""isArray"": true,
+              ""features"": {
+                ""customerKey"": false
+              }
+            }
+          ],
+          ""isArray"": true,
+          ""features"": {
+            ""customerKey"": false
+          }
+        }
+      ],
+      ""indexes"": [
+        {
+          ""fields"": [
+            {
+              ""path"": ""categories-akey"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": true
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    ""table"": {
+      ""name"": ""myTable_struct_in_arrayStruct"",
+      ""columns"": [
+        {
+          ""name"": ""id"",
+          ""dataType"": ""string"",
+          ""subStruct"": null,
+          ""isArray"": false,
+          ""features"": {
+            ""customerKey"": true
+          }
+        },
+        {
+          ""name"": ""parent_categories"",
+          ""dataType"": ""struct"",
+          ""subStruct"": [
+            {
+              ""name"": ""akey"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""val"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""child_ooe"",
+              ""dataType"": ""struct"",
+              ""subStruct"": [
+                {
+                  ""name"": ""u32"",
+                  ""dataType"": ""uint32"",
+                  ""subStruct"": null,
+                  ""isArray"": false,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                },
+                {
+                  ""name"": ""u64"",
+                  ""dataType"": ""uint64"",
+                  ""subStruct"": null,
+                  ""isArray"": false,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                },
+                {
+                  ""name"": ""i32"",
+                  ""dataType"": ""int32"",
+                  ""subStruct"": null,
+                  ""isArray"": false,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                },
+                {
+                  ""name"": ""i64"",
+                  ""dataType"": ""int64"",
+                  ""subStruct"": null,
+                  ""isArray"": false,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                },
+                {
+                  ""name"": ""f64"",
+                  ""dataType"": ""float64"",
+                  ""subStruct"": null,
+                  ""isArray"": false,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                },
+                {
+                  ""name"": ""d2"",
+                  ""dataType"": ""decimal"",
+                  ""precision"": 12,
+                  ""scale"": 2,
+                  ""subStruct"": null,
+                  ""isArray"": false,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                },
+                {
+                  ""name"": ""d5"",
+                  ""dataType"": ""decimal"",
+                  ""precision"": 12,
+                  ""scale"": 5,
+                  ""subStruct"": null,
+                  ""isArray"": false,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                },
+                {
+                  ""name"": ""d6"",
+                  ""dataType"": ""decimal"",
+                  ""precision"": 12,
+                  ""scale"": 6,
+                  ""subStruct"": null,
+                  ""isArray"": false,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                },
+                {
+                  ""name"": ""b"",
+                  ""dataType"": ""boolean"",
+                  ""subStruct"": null,
+                  ""isArray"": false,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                },
+                {
+                  ""name"": ""iljson"",
+                  ""dataType"": ""JSON"",
+                  ""subStruct"": null,
+                  ""isArray"": false,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                },
+                {
+                  ""name"": ""string"",
+                  ""dataType"": ""string"",
+                  ""subStruct"": null,
+                  ""isArray"": false,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                },
+                {
+                  ""name"": ""datetime"",
+                  ""dataType"": ""timestamp"",
+                  ""subStruct"": null,
+                  ""isArray"": false,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                }
+              ],
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            }
+          ],
+          ""isArray"": true,
+          ""features"": {
+            ""customerKey"": false
+          }
+        }
+      ],
+      ""indexes"": [
+        {
+          ""fields"": [
+            {
+              ""path"": ""categories-akey"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": true
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    ""table"": {
+      ""name"": ""myTable_arrayStruct_in_arrayStruct"",
+      ""columns"": [
+        {
+          ""name"": ""id"",
+          ""dataType"": ""string"",
+          ""subStruct"": null,
+          ""isArray"": false,
+          ""features"": {
+            ""customerKey"": true
+          }
+        },
+        {
+          ""name"": ""parent_categories"",
+          ""dataType"": ""struct"",
+          ""subStruct"": [
+            {
+              ""name"": ""akey"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""val"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""child_categories"",
+              ""dataType"": ""struct"",
+              ""subStruct"": [
+                {
+                  ""name"": ""akey"",
+                  ""dataType"": ""string"",
+                  ""subStruct"": null,
+                  ""isArray"": false,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                },
+                {
+                  ""name"": ""val"",
+                  ""dataType"": ""string"",
+                  ""subStruct"": null,
+                  ""isArray"": false,
+                  ""features"": {
+                    ""customerKey"": false
+                  }
+                }
+              ],
+              ""isArray"": true,
+              ""features"": {
+                ""customerKey"": false
+              }
+            }
+          ],
+          ""isArray"": true,
+          ""features"": {
+            ""customerKey"": false
+          }
+        }
+      ],
+      ""indexes"": [
+        {
+          ""fields"": [
+            {
+              ""path"": ""categories-akey"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": true
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    ""table"": {
+      ""name"": ""myTable_field_in_arrayStruct"",
+      ""columns"": [
+        {
+          ""name"": ""id"",
+          ""dataType"": ""string"",
+          ""subStruct"": null,
+          ""isArray"": false,
+          ""features"": {
+            ""customerKey"": true
+          }
+        },
+        {
+          ""name"": ""parent_categories"",
+          ""dataType"": ""struct"",
+          ""subStruct"": [
+            {
+              ""name"": ""akey"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""val"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            },
+            {
+              ""name"": ""child_id"",
+              ""dataType"": ""string"",
+              ""subStruct"": null,
+              ""isArray"": false,
+              ""features"": {
+                ""customerKey"": false
+              }
+            }
+          ],
+          ""isArray"": true,
+          ""features"": {
+            ""customerKey"": false
+          }
+        }
+      ],
+      ""indexes"": [
+        {
+          ""fields"": [
+            {
+              ""path"": ""categories-akey"",
+              ""features"": {
+                ""fuzzy"": false,
+                ""tokenize"": false,
+                ""ascending"": true
+              },
+              ""isPrimaryKey"": true
+            }
+          ],
+          ""features"": {
+            ""keepInCache"": false
+          }
+        }
+      ]
+    }
+  }
+]
+",0,2021-03-16 15:44:49
